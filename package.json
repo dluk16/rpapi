@@ -1,0 +1,13 @@
+{
+  "name": "rpapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "LucianoEun",
+  "license": "MIT",
+  "dependencies": {
+    "@citizenfx/client": "^2.0.18270-1",
+    "@citizenfx/server": "^2.0.18270-1",
+    "@types/node": "^24.2.1",
+    "mysql2": "^3.14.3"
+  }
+}
