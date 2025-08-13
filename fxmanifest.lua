@@ -8,10 +8,12 @@ version '1.0.0'
 -- Server scripts
 server_scripts {
     'login.js',
-    'logout.js'
+    'logout.js',
+    'server.js',
 }
 
 -- Client scripts
 client_scripts {
-    'inicio.js'
+    'inicio.js',
+    'client.js',
 }

@@ -1,14 +1,16 @@
+const spawnPos = [686.245, 577.950, 130.461];
+
 on('onClientGameTypeStart', () => {
   exports.spawnmanager.setAutoSpawnCallback(() => {
     exports.spawnmanager.spawnPlayer({
-      x: 686.245,
-      y: 577.950,
-      z: 130.461,
+      x: spawnPos[0],
+      y: spawnPos[1],
+      z: spawnPos[2],
       model: 'a_m_m_skater_01'
     }, () => {
       emit('chat:addMessage', {
         args: [
-          'Hi, there!'
+          'Welcome to the party!~'
         ]
       })
     });
@@ -18,4 +20,17 @@ on('onClientGameTypeStart', () => {
   exports.spawnmanager.forceRespawn()
 });
 
-const server_id = GetPlayerServerId(source);
+
+RegisterCommand('buscar', (source, args, raw) => {
+  
+      console.log("Source: "+source);
+      console.log("PlayerPedId: "+PlayerPedId());
+     
+  console.log("PlayerServerId: "+GetPlayerFromServerId(source))
+
+  console.log("Player index: "+GetPlayerIndex())
+  console.log("PedFromServerId: "+GetPlayerPed(GetPlayerFromServerId(source)))
+
+}, false);
+
+
