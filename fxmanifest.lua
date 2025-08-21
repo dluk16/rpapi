@@ -7,13 +7,27 @@ version '1.0.0'
 
 -- Server scripts
 server_scripts {
-    'login.js',
-    'logout.js',
-    'server.js',
+    'server/login.js',
+    'server/logout.js',
+    'server/server.js',
+    'server/steste.js',
 }
 
 -- Client scripts
 client_scripts {
-    'inicio.js',
-    'client.js',
+    'client/inicio.js',
+    'client/client.js',   
+    'client/cteste.js',
+}
+
+
+
+-- specify the root page, relative to the resource
+ui_page 'ui/hud.html'
+
+-- every client-side file still needs to be added to the resource packfile!
+files {
+    'ui/hud.html',
+    'ui/js/hud.js',
+    'ui/css/app.css',
 }

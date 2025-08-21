@@ -19,18 +19,3 @@ on('onClientGameTypeStart', () => {
   exports.spawnmanager.setAutoSpawn(true)
   exports.spawnmanager.forceRespawn()
 });
-
-
-RegisterCommand('buscar', (source, args, raw) => {
-  
-      console.log("Source: "+source);
-      console.log("PlayerPedId: "+PlayerPedId());
-     
-  console.log("PlayerServerId: "+GetPlayerFromServerId(source))
-
-  console.log("Player index: "+GetPlayerIndex())
-  console.log("PedFromServerId: "+GetPlayerPed(GetPlayerFromServerId(source)))
-
-}, false);
-
-
